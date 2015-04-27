@@ -1,0 +1,28 @@
+# Linux
+._*
+*~
+.directory
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains
+.idea/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+
+# Node
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+npm-debug.log
