@@ -1,8 +1,7 @@
 {
   "name": "routicorn",
   "version": "1.0.0-beta1",
-  "description": "Advanced express routing with superpowers",
-  "private": true,
+  "description": "Extremely flexible express routing with superpowers",
   "repository": {
     "type": "git",
     "url": "git@git.fapprik.com:fza/routicorn.git"
