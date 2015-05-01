@@ -1,6 +1,6 @@
 # Routicorn
 
-> Express routing with unicorn power. Supercharges the C of your MV*C stack.
+> Advanced express routing with superpowers
 
 This is a [Booticorn]() component, but can be used standalone, too.
 

@@ -1,7 +1,7 @@
 {
   "name": "routicorn",
-  "version": "0.1.0",
-  "description": "Advanced express routing with clear route-controller separation",
+  "version": "1.0.0-beta1",
+  "description": "Advanced express routing with superpowers",
   "private": true,
   "repository": {
     "type": "git",
@@ -28,5 +28,7 @@
     "qs": "~2.4.1",
     "throw": "~1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "body-parser": "~1.12.3"
+  }
 }
