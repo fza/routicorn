@@ -1,0 +1,21 @@
+list_users:
+  pattern: /
+  controller: users.list
+
+create_user:
+  pattern: /new
+  controller: users.create
+  method: post
+
+_user_actions:
+  pattern: /:username
+  requirements:
+    username: ^\w{3,}$
+  routes:
+    user_info:
+      pattern: /
+      controller: users.show
+
+    _user_books:
+      pattern: /books
+      resource: books.yml

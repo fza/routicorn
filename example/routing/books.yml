@@ -1,0 +1,23 @@
+list_books:
+  pattern: /
+  controller: books.list
+
+create_book:
+  pattern: /new
+  controller: books.create
+  method: post
+
+_book_actions:
+  pattern: /:bookslug
+  requirements:
+    bookslug: ^\w{3,}$
+  routes:
+    book_info:
+      pattern: /
+      controller: books.show
+
+    remove_book:
+      pattern: /
+      controller: books.remove
+      method: delete
+

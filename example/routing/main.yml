@@ -1,0 +1,7 @@
+index:
+  pattern: /
+  controller: main.index
+
+_users:
+  pattern: /users
+  resource: users.yml
