@@ -47,7 +47,7 @@
     "lodash": "~3.6.0",
     "merge-descriptors": "~1.0.0",
     "methods": "~1.1.1",
-    "qs": "~2.4.1",
+    "qs": "~6.9.4",
     "readable-mock-req": "~0.2.1",
     "setprototypeof": "~1.0.0",
     "shortid": "~2.2.2"
