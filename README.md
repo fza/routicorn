@@ -1,10 +1,10 @@
 # Routicorn
 
-> Advanced express routing with superpowers
+[![Build Status](https://travis-ci.org/fza/routicorn.svg)](https://travis-ci.org/fza/routicorn) [![Coverage Status](https://coveralls.io/repos/fza/routicorn/badge.svg?branch=master)](https://coveralls.io/r/fza/routicorn?branch=master) [![Dependency Status](https://david-dm.org/fza/routicorn.svg)](https://david-dm.org/fza/routicorn) [![devDependency Status](https://david-dm.org/fza/routicorn/dev-status.svg)](https://david-dm.org/fza/routicorn#info=devDependencies)
 
-This is a [Booticorn]() component, but can be used standalone, too.
+[![NPM](https://nodei.co/npm/routicorn.png)](https://npmjs.org/package/routicorn)
 
-@todo Write what this actually is...
+> Advanced YAML-based routing for express
 
 ## Features
 
@@ -13,7 +13,7 @@ This is a [Booticorn]() component, but can be used standalone, too.
 ## Installation
 
 ```
-npm install --save routicorn
+npm install --save express routicorn
 ```
 
 ## Usage

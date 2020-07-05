@@ -1,9 +1,11 @@
 'use strict';
 
+var http = require('http');
+
 module.exports = {
 
   index: function indexAction(req, res, next) {
-    res.send('Hello world!');
+    res.redirect('list_users', next);
   }
 
 };

@@ -23,13 +23,22 @@ UserController.prototype.list = function (req, res, next) {
 UserController.prototype.create = function (req, res, next) {
   var username = req.body.username;
 
-  if (this.users.indexOf(username) !== -1) {
-    return res.status(409).send('User already exists.');
+  if (username) {
+    if (this.users.indexOf(username) !== -1) {
+      return res.status(409).send('User already exists.');
+    }
+
+    this.users.push(username);
+
+    return req.forward('user_info', {
+      params: {
+        username: username
+      }
+    }, next);
+    //return res.redirect('list_users');
   }
 
-  this.users.push(username);
-
-  res.redirect('list_users');
+  next(new Error('Please POST a JSON document, like {"username": "foo"}'));
 };
 
 UserController.prototype.show = function (req, res, next) {

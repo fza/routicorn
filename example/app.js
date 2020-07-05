@@ -1,9 +1,9 @@
 'use strict';
 
-var http = require('http'),
-  path = require('path'),
-  express = require('express'),
-  routicorn = require('..');
+var http = require('http');
+var path = require('path');
+var express = require('express');
+var routicorn = require('..');
 
 var app = express();
 
@@ -11,15 +11,17 @@ var router = routicorn({
   controllerBasePath: path.join(__dirname, 'controllers')
 });
 
-router.on('beforeMount', function (route) {
-  if (route.name === '_users') {
-    route.use(require('body-parser').json());
+var jsonBodyParser = require('body-parser').json();
+
+router.instance.on('route registered', function (route) {
+  if (route.handlesMethod('post')) {
+    route.use(jsonBodyParser);
   }
 });
 
-router.loadRoutes(path.join(__dirname, 'routing', 'main.yml'));
+router.instance.loadRoutes(path.join(__dirname, 'routing', 'main.yml'));
 
-console.log(router.getRouteTree());
+console.log(router.instance.getRouteTree());
 
 app.use(router);
 

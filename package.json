@@ -1,32 +1,58 @@
 {
   "name": "routicorn",
-  "version": "1.0.0-beta2",
-  "description": "Extremely flexible express routing with superpowers",
+  "version": "1.0.0-beta3",
+  "description": "Advanced express/connect YAML-based routing",
+  "author": "Felix Zandanel <felix@zandanel.me>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@git.fapprik.com:fza/routicorn.git"
   },
-  "maintainers": [
-    {
-      "name": "Felix Zandanel",
-      "email": "felix@zandanel.me"
-    }
+  "bugs": {
+    "url": "https://github.com/fza/format-throw/issues"
+  },
+  "keywords": [
+    "express",
+    "connect",
+    "routing",
+    "router",
+    "mvc",
+    "framework",
+    "controller",
+    "yaml",
+    "yml"
   ],
   "engines": {
-    "node": ">= 0.10"
+    "node": ">=0.10"
   },
   "main": "index.js",
-  "dependencies": {
-    "debug": "~2.1.3",
-    "eventemitter3": "~1.0.1",
-    "express": ">=4.12.0",
-    "js-yaml": "~3.2.7",
-    "lodash": "~3.6.0",
-    "methods": "~1.1.1",
-    "qs": "~2.4.1",
-    "throw": "~1.0.0"
+  "scripts": {
+    "test": "grunt test"
   },
   "devDependencies": {
-    "body-parser": "~1.12.3"
+    "body-parser": "~1.12.3",
+    "chai": "~2.2.0",
+    "grunt": "~0.4.5",
+    "grunt-coveralls": "~1.0.0",
+    "grunt-eslint": "~11.0.0",
+    "grunt-mocha-istanbul": "~2.4.0",
+    "istanbul": "~0.3.13",
+    "load-grunt-tasks": "~3.1.0",
+    "mocha": "~2.2.4"
+  },
+  "dependencies": {
+    "debug": "~2.1.3",
+    "format-throw": "~0.1.0",
+    "js-yaml": "~3.2.7",
+    "lodash": "~3.6.0",
+    "merge-descriptors": "~1.0.0",
+    "methods": "~1.1.1",
+    "qs": "~2.4.1",
+    "readable-mock-req": "~0.2.1",
+    "setprototypeof": "~1.0.0",
+    "shortid": "~2.2.2"
+  },
+  "peerDependencies": {
+    "express": ">=4.12.0 <5.0.0"
   }
 }

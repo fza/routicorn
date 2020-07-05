@@ -1,6 +1,7 @@
 list_users:
   pattern: /
   controller: users.list
+  methods: all
 
 create_user:
   pattern: /new
